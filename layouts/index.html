@@ -1,0 +1,13 @@
+{{ define "content" }}
+	{{ range where .Site.Pages "Type" "index" }}
+		{{ .Content }}
+	{{ end }}
+{{ end }}
+
+{{ define "copyright" }}
+<br/>
+{{ end }}
+
+{{ define "footer" }}
+<br/>
+{{ end }}

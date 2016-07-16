@@ -1,0 +1,80 @@
+baseurl = "http://telepathy.freedesktop.org/"
+languageCode = "en-us"
+title = "Telepathy"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = false
+# Enable Google Analytics by entering your tracking id
+#googleAnalytics = ""
+
+[params]
+	# General information
+	#author = ""
+	#description = ""
+	copyright = "The Telepathy team, CC-BY 4.0"
+
+	# Repository
+	#provider = "github"
+	#repo_url = "http://cgit.freedesktop.org/telepathy"
+
+	version = ""
+	logo = "TelepathyLogo.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+[params.palette]
+    	primary = "grey"
+    	accent  = "light green"
+
+[params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = ""
+	github  = ""
+
+[[menu.main]]
+	name   = "About"
+	url    = "about/"
+	weight = 10
+
+[[menu.main]]
+	name   = "News"
+	url    = "news/"
+	weight = 30
+
+[[menu.main]]
+	name   = "Downloads"
+	url    = "downloads/"
+	weight = 40
+
+[[menu.main]]
+	name   = "Documentation"
+	url    = "documentation/"
+	weight = 50
+
+[[menu.main]]
+	name   = "Components"
+	url    = "components/"
+	weight = 70
+
+[[menu.main]]
+	name   = "Community"
+	url    = "community/"
+	weight = 90
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true

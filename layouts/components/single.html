@@ -1,0 +1,74 @@
+{{ define "content" }}
+    <h1>{{ .Title }}</h1>
+
+    <h2>Description</h2>
+    <p>{{ .Params.description | markdownify }}</p>
+
+    {{ with .Params.browse_git_url }}
+    <br/>
+    <div class="repo">
+    <center><a href="{{ . }}">Git repository</a></center>
+    </div>
+    {{ end }}
+
+    {{ with .Params.clone_git_url }}
+    <center><code>git clone {{ . }}</code></center>
+    {{ end }}
+
+    <table>
+
+        {{ if isset .Params "version_stable" }}
+        {{ $version := .Params.version_stable }}
+        <tr>
+            <td>Latest stable version</td>
+            <td>{{ $version }}</td>
+            <td>
+            {{ with .Params.download_stable }}
+                <i class="icon icon-download"></i>
+                <a href={{ replace . "VERSION" $version }}>Download</a>
+            {{ end }}
+            </td>
+            {{ with .Params.doc_stable }}
+            <td><a href="{{ . }}">API Documentation</a></td>
+            {{ end }}
+        </tr>
+        {{ end }}
+
+        {{ if isset .Params "version_unstable" }}
+        {{ $version := .Params.version_unstable }}
+        <tr>
+            <td>Latest unstable version</td>
+            <td>{{ $version }}</td>
+            <td>
+            {{ with .Params.download_unstable }}
+                <i class="icon icon-download"></i>
+                <a href={{ replace . "VERSION" $version }}>Download</a>
+            {{ end }}
+            </td>
+            {{ with .Params.doc_unstable }}
+            <td><a href="{{ . }}">API Documentation</a></td>
+            {{ end }}
+        </tr>
+        {{ end }}
+
+        {{ if isset .Params "version_next" }}
+        {{ $version := .Params.version_next }}
+        <tr>
+            <td>Latest 'next' pre-release</td>
+            <td>{{ $version }}</td>
+            <td>
+            {{ with .Params.download_next }}
+                <i class="icon icon-download"></i>
+                <a href={{ replace . "VERSION" $version }}>Download</a>
+            {{ end }}
+            </td>
+            {{ with .Params.doc_next }}
+            <td><a href="{{ . }}">API Documentation</a></td>
+            {{ end }}
+        </tr>
+        {{ end }}
+
+    </table>
+
+    {{ .Content }}
+{{ end }}

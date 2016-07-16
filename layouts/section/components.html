@@ -1,0 +1,45 @@
+{{ define "content" }}
+    <h1>{{ .Title }}</h1>
+
+    <h2>Libraries</h2>
+    <ul>
+    {{ range .Data.Pages }}
+    {{ if eq .Params.component_type "lib" }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ with .Params.short_desc }}
+            , {{ . | markdownify }}
+            {{ end }}
+        </li>
+    {{ end }}
+    {{ end }}
+    </ul>
+
+    <h2>Connection Managers</h2>
+    <ul>
+    {{ range .Data.Pages }}
+    {{ if eq .Params.component_type "cm" }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ with .Params.short_desc }}
+            , {{ . | markdownify }}
+            {{ end }}
+        </li>
+    {{ end }}
+    {{ end }}
+    </ul>
+
+    <h2>Others</h2>
+    <ul>
+    {{ range .Data.Pages }}
+    {{ if eq .Params.component_type "other" }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ with .Params.short_desc }}
+            , {{ . | markdownify }}
+            {{ end }}
+        </li>
+    {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}
