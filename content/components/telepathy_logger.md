@@ -1,6 +1,6 @@
 ---
-component_type: other
-weight: 101
+component_types: [ "other"]
+component_types_weight: 310
 
 browse_git_url: http://cgit.freedesktop.org/telepathy/telepathy-logger/
 clone_git_url: git://anongit.freedesktop.org/telepathy/telepathy-logger

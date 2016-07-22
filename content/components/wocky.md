@@ -1,6 +1,6 @@
 ---
-component_type: lib
-weight: 74
+component_types: [ "lib" ]
+component_types_weight: 35
 
 version_unstable: UNRELEASED
 #download_unstable: http://telepathy.freedesktop.org/releases/telepathy-qt/telepathy-qt-VERSION.tar.gz

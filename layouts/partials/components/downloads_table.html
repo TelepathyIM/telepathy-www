@@ -1,0 +1,23 @@
+{{ if or (isset .Params "download_stable") (or (isset .Params "download_unstable") (isset .Params "download_next")) }}
+<tr>
+    <td><a href="{{ .Permalink }}" title="{{ .Params.short_desc | markdownify | plainify }}">{{ .Title }}</a></td>
+    <td>
+    {{ $version := .Params.version_stable }}
+    {{ with .Params.download_stable }}
+        <a href={{ replace . "VERSION" $version }}>{{ $version }}</a>
+    {{ end }}
+    </td>
+    <td>
+    {{ $version := .Params.version_unstable }}
+    {{ with .Params.download_unstable }}
+        <a href={{ replace . "VERSION" $version }}>{{ $version }}</a>
+    {{ end }}
+    </td>
+    <td>
+    {{ $version := .Params.version_next }}
+    {{ with .Params.download_next }}
+        <a href={{ replace . "VERSION" $version }}>{{ $version }}</a>
+    {{ end }}
+    </td>
+</tr>
+{{ end }}

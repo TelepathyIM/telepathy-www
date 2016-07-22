@@ -1,6 +1,6 @@
 ---
-component_type: cm
-weight: 81
+component_types: [ "cm" ]
+component_types_weight: 55
 
 browse_git_url: http://cgit.freedesktop.org/telepathy/telepathy-salut/
 clone_git_url: git://anongit.freedesktop.org/telepathy/telepathy-salut

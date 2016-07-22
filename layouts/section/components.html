@@ -1,45 +1,104 @@
 {{ define "content" }}
+    <style>h3 {text-align: center}</style>
+
     <h1>{{ .Title }}</h1>
+
+    <h2>Documents</h2>
+    <ul>
+    {{ range .Site.Taxonomies.component_types.doc.Pages }}
+        {{ partial "components/component_listing" . }}
+    {{ end }}
+    </ul>
+
+    <h3>Online readable versions</h3>
+    <table>
+        <tr>
+            <th>Document</th>
+            <th>Latest stable</th>
+            <th>Latest unstable</th>
+            <th>Latest 'next'</th>
+        </tr>
+        {{ range .Site.Taxonomies.component_types.doc.Pages }}
+        {{ partial "components/documentation_table" . }}
+        {{ end }}
+    </table>
+
+
 
     <h2>Libraries</h2>
     <ul>
-    {{ range .Data.Pages }}
-    {{ if eq .Params.component_type "lib" }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ with .Params.short_desc }}
-            , {{ . | markdownify }}
-            {{ end }}
-        </li>
-    {{ end }}
+    {{ range .Site.Taxonomies.component_types.lib.Pages }}
+        {{ partial "components/component_listing" . }}
     {{ end }}
     </ul>
+
+    <h3>API Documentation</h3>
+    <table>
+        <tr>
+            <th>Library</th>
+            <th>Latest stable</th>
+            <th>Latest unstable</th>
+            <th>Latest 'next'</th>
+        </tr>
+        {{ range .Site.Taxonomies.component_types.lib.Pages }}
+        {{ partial "components/documentation_table" . }}
+        {{ end }}
+    </table>
+
+    <h3>Releases</h3>
+    <table>
+        <tr>
+            <th>Library</th>
+            <th>Latest stable</th>
+            <th>Latest unstable</th>
+            <th>Latest 'next'</th>
+        </tr>
+        {{ range .Site.Taxonomies.component_types.lib.Pages }}
+        {{ partial "components/downloads_table" . }}
+        {{ end }}
+    </table>
+
 
     <h2>Connection Managers</h2>
     <ul>
-    {{ range .Data.Pages }}
-    {{ if eq .Params.component_type "cm" }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ with .Params.short_desc }}
-            , {{ . | markdownify }}
-            {{ end }}
-        </li>
-    {{ end }}
+    {{ range .Site.Taxonomies.component_types.cm.Pages }}
+        {{ partial "components/component_listing" . }}
     {{ end }}
     </ul>
 
+    <h3>Releases</h3>
+    <table>
+        <tr>
+            <th>Connection Manager</th>
+            <th>Latest stable</th>
+            <th>Latest unstable</th>
+            <th>Latest 'next'</th>
+        </tr>
+        {{ range .Site.Taxonomies.component_types.cm.Pages }}
+        {{ partial "components/downloads_table" . }}
+        {{ end }}
+    </table>
+
+
+
     <h2>Others</h2>
     <ul>
-    {{ range .Data.Pages }}
-    {{ if eq .Params.component_type "other" }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ with .Params.short_desc }}
-            , {{ . | markdownify }}
-            {{ end }}
-        </li>
-    {{ end }}
+    {{ range .Site.Taxonomies.component_types.other.Pages }}
+        {{ partial "components/component_listing" . }}
     {{ end }}
     </ul>
+
+    <h3>Releases</h3>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Latest stable</th>
+            <th>Latest unstable</th>
+            <th>Latest 'next'</th>
+        </tr>
+        {{ range .Site.Taxonomies.component_types.other.Pages }}
+        {{ partial "components/downloads_table" . }}
+        {{ end }}
+    </table>
+
 {{ end }}

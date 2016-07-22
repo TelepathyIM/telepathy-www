@@ -1,6 +1,6 @@
 ---
-component_type: cm
-weight: 80
+component_types: [ "cm" ]
+component_types_weight: 50
 
 browse_git_url: http://cgit.freedesktop.org/telepathy/telepathy-gabble/
 clone_git_url: git://anongit.freedesktop.org/telepathy/telepathy-gabble

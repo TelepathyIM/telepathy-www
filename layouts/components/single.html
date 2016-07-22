@@ -16,6 +16,10 @@
     {{ end }}
 
     <table>
+        {{ $.Scratch.Set "doc_title" "API Documentation" }}
+        {{ if eq .Params.component_type "doc" }}
+            {{ $.Scratch.Set "doc_title" "View" }}
+        {{ end }}
 
         {{ if isset .Params "version_stable" }}
         {{ $version := .Params.version_stable }}
@@ -29,7 +33,7 @@
             {{ end }}
             </td>
             {{ with .Params.doc_stable }}
-            <td><a href="{{ . }}">API Documentation</a></td>
+            <td><a href="{{ . }}">{{ $.Scratch.Get "doc_title" }}</a></td>
             {{ end }}
         </tr>
         {{ end }}
@@ -46,7 +50,7 @@
             {{ end }}
             </td>
             {{ with .Params.doc_unstable }}
-            <td><a href="{{ . }}">API Documentation</a></td>
+            <td><a href="{{ . }}">{{ $.Scratch.Get "doc_title" }}</a></td>
             {{ end }}
         </tr>
         {{ end }}
@@ -63,7 +67,7 @@
             {{ end }}
             </td>
             {{ with .Params.doc_next }}
-            <td><a href="{{ . }}">API Documentation</a></td>
+            <td><a href="{{ . }}">{{ $.Scratch.Get "doc_title" }}</a></td>
             {{ end }}
         </tr>
         {{ end }}

@@ -1,6 +1,6 @@
 ---
-component_type: lib
-weight: 73
+component_types: [ "lib" ]
+component_types_weight: 30
 
 browse_git_url: http://cgit.freedesktop.org/telepathy/telepathy-farstream/
 clone_git_url: git://anongit.freedesktop.org/telepathy/telepathy-farstream

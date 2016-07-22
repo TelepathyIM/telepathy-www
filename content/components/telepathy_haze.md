@@ -1,6 +1,6 @@
 ---
-component_type: cm
-weight: 84
+component_types: [ "cm" ]
+component_types_weight: 60
 
 browse_git_url: http://cgit.freedesktop.org/telepathy/telepathy-haze/
 clone_git_url: git://anongit.freedesktop.org/telepathy/telepathy-haze

@@ -1,5 +1,5 @@
 ---
-component_type: lib|cm|other
+component_types: ["lib", "cm", "other", "doc" ]
 
 version_stable: 0.2.0
 download_stable: http://telepathy.freedesktop.org/releases/telepathy-foo/telepathy-foo-VERSION.tar.gz

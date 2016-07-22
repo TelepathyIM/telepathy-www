@@ -1,0 +1,23 @@
+{{ if or (isset .Params "doc_stable") (or (isset .Params "doc_unstable") (isset .Params "doc_next")) }}
+<tr>
+    <td><a href="{{ .Permalink }}" title="{{ .Params.short_desc | markdownify | plainify }}">{{ .Title }}</a></td>
+    <td>
+    {{ $version := .Params.version_stable }}
+    {{ with .Params.doc_stable }}
+        <a href={{ . }}>{{ $version }}</a>
+    {{ end }}
+    </td>
+    <td>
+    {{ $version := .Params.version_unstable }}
+    {{ with .Params.doc_unstable }}
+        <a href={{ . }}>{{ $version }}</a>
+    {{ end }}
+    </td>
+    <td>
+    {{ $version := .Params.version_next }}
+    {{ with .Params.doc_next }}
+        <a href={{ . }}>{{ $version }}</a>
+    {{ end }}
+    </td>
+</tr>
+{{ end }}

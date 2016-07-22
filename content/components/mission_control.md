@@ -1,6 +1,6 @@
 ---
-component_type: other
-weight: 100
+component_types: [ "other" ]
+component_types_weight: 300
 
 browse_git_url: http://cgit.freedesktop.org/telepathy/telepathy-mission-control/
 clone_git_url: git://anongit.freedesktop.org/telepathy/telepathy-mission-control

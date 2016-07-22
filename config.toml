@@ -43,30 +43,30 @@ canonifyurls = false
 	twitter = ""
 	github  = ""
 
+[taxonomies]
+	category   = "categories"
+	component_type = "component_types"
+
 [[menu.main]]
 	name   = "About"
 	url    = "about/"
 	weight = 10
 
-[[menu.main]]
-	name   = "News"
-	url    = "news/"
-	weight = 30
 
-[[menu.main]]
-	name   = "Downloads"
-	url    = "downloads/"
-	weight = 40
-
-[[menu.main]]
-	name   = "Documentation"
-	url    = "documentation/"
-	weight = 50
+# [[menu.main]]
+# 	name   = "News"
+# 	url    = "news/"
+# 	weight = 30
 
 [[menu.main]]
 	name   = "Components"
-	url    = "components/"
+	url       = "components/"
+	weight = 50
+
+[[menu.main]]
+	name   = "Resources"
 	weight = 70
+	url       = "resources/"
 
 [[menu.main]]
 	name   = "Community"
