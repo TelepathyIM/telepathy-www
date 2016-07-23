@@ -4,10 +4,26 @@ type: index
 weight: 0
 ---
 
-<center>![Telepathy logo](/Telepathy.png)</center>
+<style>
+.front-page-links {
+  font-size: 24px;
+  line-height: 30px;
 
-<div class="repo">
- <a href="/about" target="_blank">
-    <i class="icon icon-note"></i> Discover
-</a>
+}
+</style>
+
+<center>
+![Telepathy logo](/Telepathy.png)
+<br/>
+Real-time _communication_ & _collaboration_ for the desktop & mobile
+
+<br/>
+
+<div class="front-page-links">
+
+<i class="icon icon-star"></i> [Discover Telepathy](/about)
+
+<i class="icon icon-search"></i> [Explore the project](/components)
+
 </div>
+</center>
