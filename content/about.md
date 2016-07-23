@@ -17,29 +17,17 @@ Telepathy provides protocol backends for the most popular protocols, including: 
 
 Telepathy exposes the available real-time communications capabilities of each protocol and allows applications to deal with only the part that they are interested in.
 
-### Presence
+* **Presence**: applications can see your online status or change it
 
-Applications can see your online status or change it.
+* **Contact rosters**: your contacts are made available to applications
 
-### Contact rosters
+* **Messages**: applications can send or receive any kind of messages over any protocol
 
-Your contacts are made available to applications.
+* **Voice/video calls**: applications can easily integrate calls with voice and/or video content and more, depending on the application's needs
 
-### Messages
+* **File transfers**: file transfers between friends are made easy for applications
 
-Applications can send or receive any kind of messages over any protocol.
-
-### Voice/video calls
-
-Applications can easily integrate calls with voice and/or video content and more, depending on the application's needs.
-
-### File transfers
-
-File transfers between friends are made easy for applications.
-
-### Telepathy Tubes
-
-Tubes are contact-to-contact networking. Tubes enable one-to-one, one-to-many or many-to-many communication between contacts using either network sockets (stream tubes) or a private D-Bus bus (D-Bus tubes). This allows applications to support collaboration between users, with a minimal amount of effort on the part of both application developers and the end-user. Application developers can focus on their application protocols, without having to worry about networking, firewall traversal or service discovery. End users no longer have to configure collaboration accounts, share IP addresses or forward ports on their firewalls.
+* **Telepathy Tubes**: Tubes are contact-to-contact networking. Tubes enable one-to-one, one-to-many or many-to-many communication between contacts using either network sockets (stream tubes) or a private D-Bus bus (D-Bus tubes). This allows applications to support collaboration between users, with a minimal amount of effort on the part of both application developers and the end-user. Application developers can focus on their application protocols, without having to worry about networking, firewall traversal or service discovery. End users no longer have to configure collaboration accounts, share IP addresses or forward ports on their firewalls.
 
 ## Modularity
 
