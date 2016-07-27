@@ -1,0 +1,33 @@
+<nav aria-label="Navigation">
+  <a href="{{ .Site.BaseURL }}" class="project">
+    <div class="banner">
+      {{ with .Site.Params.logo }}
+        <div>
+          <img src="{{ $.Site.BaseURL }}{{ . }}"
+                style="display: block; height: 50px; width: 190px;"/>
+        </div>
+      {{ end }}
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+
+      <div class="toc">
+        {{ if gt (len .Site.Menus.main) 0 }}
+        <ul>
+          {{ partial "nav" . }}
+        </ul>
+        {{ end }}
+
+        <hr>
+
+        {{ if gt (len .Site.Menus.community) 0 }}
+        <ul>
+            {{ partial "nav_community" . }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</nav>

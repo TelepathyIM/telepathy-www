@@ -1,9 +1,5 @@
 ---
 title: "Source code"
-weight: 121
-menu:
-    main:
-        parent: Community
 ---
 
 

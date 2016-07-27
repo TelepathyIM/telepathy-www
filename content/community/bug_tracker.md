@@ -1,9 +1,5 @@
 ---
 title: "Bug tracker"
-weight: 122
-menu:
-    main:
-        parent: Community
 ---
 
 Upstream Telepathy components use the **[freedesktop bugzilla](http://bugs.freedesktop.org/)**.

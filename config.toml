@@ -68,10 +68,20 @@ canonifyurls = false
 	weight = 70
 	url       = "resources/"
 
-[[menu.main]]
-	name   = "Community"
-	url    = "community/"
-	weight = 90
+[[menu.community]]
+	name = "IRC channel"
+	url = "community/chat/"
+	weight = 1
+
+[[menu.community]]
+	name = "Mailing List"
+	url = "community/mailing_list/"
+	weight = 2
+
+[[menu.community]]
+	name = "Bug tracker"
+	url = "community/bug_tracker/"
+	weight = 3
 
 [blackfriday]
 	smartypants	= true
