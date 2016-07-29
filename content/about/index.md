@@ -11,8 +11,6 @@ Telepathy is a flexible, modular communications framework for desktop and mobile
 
 Telepathy provides protocol backends for the most popular protocols, including: Jabber/XMPP/Jingle, link-local XMPP, SIP and IRC via a unified [D-Bus](http://dbus.freedesktop.org) API. It also provides convenience libraries for GLib and Qt to simplify using the API from applications.
 
-*See the full [list of supported protocols](/about/supported_protocols)*
-
 ## Multiple capabilities
 
 Telepathy exposes the available real-time communications capabilities of each protocol and allows applications to deal with only the part that they are interested in.
