@@ -1,0 +1,7 @@
+[telepathy_freedesktop]
+browse_url = "http://cgit.freedesktop.org/telepathy/NAME/"
+clone_url = "git://anongit.freedesktop.org/telepathy/NAME"
+
+[root_freedesktop]
+browse_url = "http://cgit.freedesktop.org/NAME/"
+clone_url = "git://anongit.freedesktop.org/NAME"

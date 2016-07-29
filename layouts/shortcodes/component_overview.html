@@ -1,0 +1,93 @@
+{{ with index $.Site.Data.components .Params.name }}
+
+    {{ $name := .name }}
+
+    {{ $.Scratch.Set "doc_title" "API Documentation" }}
+    {{ if eq .type "doc" }}
+        {{ $.Scratch.Set "doc_title" "View" }}
+    {{ end }}
+
+    {{ if isset . "git_site" }}
+        {{ with index $.Site.Data.git_sites .git_site }}
+            {{ replace .browse_url "NAME" $name | $.Scratch.Set "browse_url" }}
+            {{ replace .clone_url "NAME" $name | $.Scratch.Set "clone_url" }}
+        {{ end }}
+    {{ end }}
+
+    {{ if isset . "release_site" }}
+        {{ with index $.Site.Data.release_sites .release_site }}
+            {{ replace .tarball "NAME" $name | $.Scratch.Set "tarball" }}
+            {{ replace .signature "NAME" $name | $.Scratch.Set "signature" }}
+            {{ replace .directory "NAME" $name | $.Scratch.Set "directory" }}
+        {{ end }}
+    {{ end }}
+
+    {{ if isset . "git_site" }}
+    <br/>
+    <div class="repo">
+    <center><a href="{{ $.Scratch.Get "browse_url" }}">Browse repository</a></center>
+    </div>
+
+    <center><code>git clone {{ $.Scratch.Get "clone_url" }}</code></center>
+    {{ end }}
+
+    <table>
+        {{ if isset . "version_stable" }}
+        {{ $version := .version_stable }}
+        <tr>
+            <td>Latest stable version</td>
+            <td>{{ $version }}</td>
+            <td>
+            {{ if ne $version "UNRELEASED" }}
+            {{ with $.Scratch.Get "tarball" }}
+                <i class="icon icon-download"></i>
+                <a href={{ replace . "VERSION" $version }}>Download</a>
+            {{ end }}
+            {{ end }}
+            </td>
+            {{ with .doc_stable }}
+            <td><a href="{{ . }}">{{ $.Scratch.Get "doc_title" }}</a></td>
+            {{ end }}
+        </tr>
+        {{ end }}
+
+        {{ if isset . "version_unstable" }}
+        {{ $version := .version_unstable }}
+        <tr>
+            <td>Latest unstable version</td>
+            <td>{{ $version }}</td>
+            <td>
+            {{ if ne $version "UNRELEASED" }}
+            {{ with $.Scratch.Get "tarball" }}
+                <i class="icon icon-download"></i>
+                <a href={{ replace . "VERSION" $version }}>Download</a>
+            {{ end }}
+            {{ end }}
+            </td>
+            {{ with .doc_unstable }}
+            <td><a href="{{ . }}">{{ $.Scratch.Get "doc_title" }}</a></td>
+            {{ end }}
+        </tr>
+        {{ end }}
+
+        {{ if isset . "version_next" }}
+        {{ $version := .version_next }}
+        <tr>
+            <td>Latest 'next' pre-release</td>
+            <td>{{ $version }}</td>
+            <td>
+            {{ if ne $version "UNRELEASED" }}
+            {{ with $.Scratch.Get "tarball" }}
+                <i class="icon icon-download"></i>
+                <a href={{ replace . "VERSION" $version }}>Download</a>
+            {{ end }}
+            {{ end }}
+            </td>
+            {{ with .doc_next }}
+            <td><a href="{{ . }}">{{ $.Scratch.Get "doc_title" }}</a></td>
+            {{ end }}
+        </tr>
+        {{ end }}
+
+    </table>
+{{ end }}

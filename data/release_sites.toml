@@ -1,0 +1,4 @@
+[telepathy_freedesktop]
+directory = "http://telepathy.freedesktop.org/releases/NAME/"
+tarball = "http://telepathy.freedesktop.org/releases/NAME/NAME-VERSION.tar.gz"
+signature = "http://telepathy.freedesktop.org/releases/NAME/NAME-VERSION.tar.gz.asc"

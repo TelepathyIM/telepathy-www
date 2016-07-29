@@ -8,83 +8,91 @@ canonifyurls = false
 #googleAnalytics = ""
 
 [params]
-	# General information
-	#author = ""
-	#description = ""
-	copyright = "The Telepathy team, CC-BY 4.0"
+    # General information
+    #author = ""
+    #description = ""
+    copyright = "The Telepathy team, CC-BY 4.0"
 
-	# Repository
-	#provider = "github"
-	#repo_url = "http://cgit.freedesktop.org/telepathy"
+    # Repository
+    #provider = "github"
+    #repo_url = "http://cgit.freedesktop.org/telepathy"
 
-	version = ""
-	logo = "Telepathy.png"
-	favicon = ""
+    version = ""
+    logo = "Telepathy.png"
+    favicon = ""
 
-	permalink = "#"
+    permalink = "#"
 
-	# Custom assets
-	custom_css = []
-	custom_js  = []
+    # Custom assets
+    custom_css = []
+    custom_js  = []
 
-	# Syntax highlighting theme
-	highlight_css  = ""
+    # Syntax highlighting theme
+    highlight_css  = ""
 
 [params.palette]
-    	primary = "grey"
-    	accent  = "light green"
+    primary = "grey"
+    accent  = "light green"
 
 [params.font]
-    	text = "Ubuntu"
-    	code = "Ubuntu Mono"
+    text = "Ubuntu"
+    code = "Ubuntu Mono"
 
 
 [social]
-	twitter = ""
-	github  = ""
+    twitter = ""
+    github  = ""
 
 [taxonomies]
-	category   = "categories"
-	component_type = "component_types"
+    category   = "categories"
 
 [[menu.main]]
-	name   = "About"
-	url    = "about/"
-	weight = 10
-
+    name   = "About"
+    url    = "about/"
+    weight = 10
 
 # [[menu.main]]
-# 	name   = "News"
-# 	url    = "news/"
-# 	weight = 30
+#   name   = "News"
+#   url    = "news/"
+#   weight = 30
 
 [[menu.main]]
-	name   = "Components"
-	url       = "components/"
-	weight = 50
+    name   = "Releases"
+    url       = "components/releases/"
+    weight = 40
 
 [[menu.main]]
-	name   = "Resources"
-	weight = 70
-	url       = "resources/"
+    name = "Documentation"
+    url   = "documentation/"
+    weight = 45
+
+[[menu.main]]
+    name   = "Components"
+    url       = "components/"
+    weight = 50
+
+[[menu.main]]
+    name   = "Resources"
+    weight = 70
+    url       = "resources/"
 
 [[menu.community]]
-	name = "IRC channel"
-	url = "community/chat/"
-	weight = 1
+    name = "IRC channel"
+    url = "community/chat/"
+    weight = 1
 
 [[menu.community]]
-	name = "Mailing List"
-	url = "community/mailing_list/"
-	weight = 2
+    name = "Mailing List"
+    url = "community/mailing_list/"
+    weight = 2
 
 [[menu.community]]
-	name = "Bug tracker"
-	url = "community/bug_tracker/"
-	weight = 3
+    name = "Bug tracker"
+    url = "community/bug_tracker/"
+    weight = 3
 
 [blackfriday]
-	smartypants	= true
-	fractions = true
-	smartDashes = true
-	plainIDAnchors = true
+    smartypants	= true
+    fractions = true
+    smartDashes = true
+    plainIDAnchors = true

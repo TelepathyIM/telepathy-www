@@ -1,0 +1,51 @@
+<table>
+    <tr>
+        <th>Component</th>
+        <th>Type</th>
+        <th>Latest stable</th>
+        <th>Latest unstable</th>
+        <th>Latest 'next'</th>
+    </tr>
+    {{ range sort $.Site.Data.components "weight" "asc" }}
+    {{ if isset . "release_site" }}
+
+    {{ $name := .name }}
+    {{ with index $.Site.Data.release_sites .release_site }}
+        {{ replace .tarball "NAME" $name | $.Scratch.Set "tarball" }}
+        {{ replace .signature "NAME" $name | $.Scratch.Set "signature" }}
+        {{ replace .directory "NAME" $name | $.Scratch.Set "directory" }}
+    {{ end }}
+
+    <tr>
+        <td><a href="/components/{{ .name }}" title="{{ .short_desc | markdownify | plainify }}">{{ .title }}</a></td>
+        <td>{{ index $.Site.Data.component_types .type }}</td>
+        <td>
+        {{ with .version_stable }}
+        {{ if ne . "UNRELEASED" }}
+            <strong>
+                <i class="icon icon-download"></i>
+                <a href={{ replace ($.Scratch.Get "tarball") "VERSION" . }}>{{ . }}</a>
+            </strong>
+        {{ end }}
+        {{ end }}
+        </td>
+        <td>
+        {{ with .version_unstable }}
+         {{ if ne . "UNRELEASED" }}
+            <i class="icon icon-download"></i>
+            <a href={{ replace ($.Scratch.Get "tarball") "VERSION" . }}>{{ . }}</a>
+        {{ end }}
+        {{ end }}
+        </td>
+        <td>
+        {{ with .version_next }}
+        {{ if ne . "UNRELEASED" }}
+            <i class="icon icon-download"></i>
+            <a href={{ replace ($.Scratch.Get "tarball") "VERSION" . }}>{{ . }}</a>
+        {{ end }}
+        {{ end }}
+        </td>
+    </tr>
+    {{ end }}
+    {{ end }}
+</table>

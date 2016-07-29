@@ -1,25 +1,12 @@
 ---
-component_types: [ "cm" ]
-component_types_weight: 50
-
-browse_git_url: http://cgit.freedesktop.org/telepathy/telepathy-gabble/
-clone_git_url: git://anongit.freedesktop.org/telepathy/telepathy-gabble
-
-version_stable: 0.18.3
-download_stable: http://telepathy.freedesktop.org/releases/telepathy-gabble/telepathy-gabble-VERSION.tar.gz
-
-version_next: 0.99.10
-download_next: http://telepathy.freedesktop.org/releases/telepathy-gabble/telepathy-gabble-VERSION.tar.gz
-
-version_unstable: 0.17.5
-download_unstable: http://telepathy.freedesktop.org/releases/telepathy-gabble/telepathy-gabble-VERSION.tar.gz
-
 title: Telepathy Gabble
-
-short_desc: a Jabber/XMPP connection manager that handles single- and multi-user chats as well as voice/video calls
-
-description: telepathy-gabble is a connection manager for the XMPP (Jabber) protocol. It uses [Wocky](/components/wocky) for implementing the XMPP protocol and [Telepathy GLib](/components/telepathy_glib/) for implementing the Telepathy D-Bus API.
 ---
+
+## Description
+
+telepathy-gabble is a connection manager for the XMPP (Jabber) protocol. It uses [Wocky](/components/wocky) for implementing the XMPP protocol and [Telepathy GLib](/components/telepathy-glib) for implementing the Telepathy D-Bus API.
+
+{{< component_overview name="telepathy-gabble" >}}
 
 ## XEP status in Gabble
 

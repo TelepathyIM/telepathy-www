@@ -1,20 +1,12 @@
 ---
-component_types: [ "lib" ]
-component_types_weight: 35
-
-version_unstable: UNRELEASED
-#download_unstable: http://telepathy.freedesktop.org/releases/telepathy-qt/telepathy-qt-VERSION.tar.gz
-doc_unstable: http://telepathy.freedesktop.org/doc/wocky/
-
-browse_git_url: http://cgit.freedesktop.org/wocky/
-clone_git_url: git://anongit.freedesktop.org/wocky
-
 title: Wocky
-
-short_desc: the XMPP library used by telepathy-gabble and telepathy-salut
-
-description: Wocky is the XMPP library used by telepathy-gabble (the regular XMPP backend) and telepathy-salut (the iChat-compatible link-local XMPP backend as specified in [XEP-0174](http://xmpp.org/extensions/xep-0174.html)). It uses GObject, GIO, libxml2, plus your choice of [GnuTLS](http://www.gnutls.org/) or [OpenSSL](http://www.openssl.org/).
 ---
+
+## Description
+
+Wocky is the XMPP library used by telepathy-gabble (the regular XMPP backend) and telepathy-salut (the iChat-compatible link-local XMPP backend as specified in [XEP-0174](http://xmpp.org/extensions/xep-0174.html)). It uses GObject, GIO, libxml2, plus your choice of [GnuTLS](http://www.gnutls.org/) or [OpenSSL](http://www.openssl.org/).
+
+{{< component_overview name="wocky" >}}
 
 {{< note title="Note" >}}
 At present, Wocky does not receive its own independent releases. It is included as a Git submodule in the Gabble and Salut repositories, and is distributed as part of their releases.

@@ -1,0 +1,35 @@
+<table>
+    <tr>
+        <th>{{ index $.Site.Data.component_types $.Params.component_type }}</th>
+        <th>Latest stable</th>
+        <th>Latest unstable</th>
+        <th>Latest 'next'</th>
+    </tr>
+    {{ range sort $.Site.Data.components "weight" "asc" }}
+    {{ if eq .type $.Params.component_type }}
+    {{ if or (isset . "doc_stable") (or (isset . "doc_unstable") (isset . "doc_next")) }}
+    <tr>
+        <td><a href="/components/{{ .name }}" title="{{ .short_desc | markdownify | plainify }}">{{ .title }}</a></td>
+        <td>
+        {{ $version := .version_stable }}
+        {{ with .doc_stable }}
+            <strong><a href={{ . }}>{{ $version }}</a></strong>
+        {{ end }}
+        </td>
+        <td>
+        {{ $version := .version_unstable }}
+        {{ with .doc_unstable }}
+            <a href={{ . }}>{{ $version }}</a>
+        {{ end }}
+        </td>
+        <td>
+        {{ $version := .version_next }}
+        {{ with .doc_next }}
+            <a href={{ . }}>{{ $version }}</a>
+        {{ end }}
+        </td>
+    </tr>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</table>
