@@ -18,7 +18,7 @@ canonifyurls = false
     #repo_url = "http://cgit.freedesktop.org/telepathy"
 
     version = ""
-    logo = "Telepathy.png"
+    logo = "images/Telepathy.png"
     favicon = ""
 
     permalink = "#"

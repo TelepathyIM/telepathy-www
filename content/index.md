@@ -12,7 +12,7 @@ weight: 0
 </style>
 
 <center>
-![Telepathy logo](/Telepathy.png)
+![Telepathy logo](/images/Telepathy.png)
 <br/>
 Real-time _communication_ & _collaboration_ for the desktop & mobile
 

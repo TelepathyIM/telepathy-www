@@ -5,7 +5,7 @@ weight: 10
 
 Telepathy is a flexible, modular communications framework for desktop and mobile devices that enables real-time communication via pluggable protocol backends. Telepathy is a **communications service** that can be accessed by many applications ("clients") simultaneously. This allows any application to access presence information, request a communication channel (potentially handled by another client), or provide collaboration features contact-to-contact.
 
-<center>![Telepathy Architecture Overview](/TelepathyArchitectureOverview.png)</center>
+<center>![Telepathy Architecture Overview](/images/TelepathyArchitectureOverview.png)</center>
 
 ## Multiple protocols
 
