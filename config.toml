@@ -11,7 +11,7 @@ canonifyurls = false
     # General information
     #author = ""
     #description = ""
-    copyright = "The Telepathy team, CC-BY 4.0"
+    #copyright = "The Telepathy team, CC-BY 4.0"
 
     # Repository
     #provider = "github"
