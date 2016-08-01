@@ -16,7 +16,7 @@
       <div class="toc">
         {{ if gt (len .Site.Menus.main) 0 }}
         <ul>
-          {{ partial "nav" . }}
+          {{ partial "nav" (dict "currentNode" . "menu" "main") }}
         </ul>
         {{ end }}
 
@@ -24,7 +24,7 @@
 
         {{ if gt (len .Site.Menus.community) 0 }}
         <ul>
-            {{ partial "nav_community" . }}
+            {{ partial "nav" (dict "currentNode" . "menu" "community")  }}
         </ul>
         {{ end }}
       </div>
