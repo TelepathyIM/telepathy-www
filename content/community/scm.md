@@ -1,7 +1,7 @@
 ---
 title: "Source code"
+draft: true
 ---
-
 
 Telepathy uses [git](http://git.or.cz/) and is hosted on freedesktop.org.
 
@@ -9,7 +9,7 @@ You can **browse** the source code via the **[cgit web interface](http://cgit.fr
 
 ## Checking out the source code
 
-If you want bleeding-edge code, (or if you want to help out with development of Telepathy), you can check out the source code from git. Of course, you might prefer to use our [Source Code Tarballs](/downloads).
+If you want bleeding-edge code, (or if you want to help out with development of Telepathy), you can check out the source code from git. Of course, you might prefer to use our [Source Code Tarballs](/components/releases).
 
 Anybody can checkout the latest source code anonymously with a command such as the following:
 

@@ -8,7 +8,6 @@ weight: 0
 .front-page-links {
   font-size: 24px;
   line-height: 30px;
-
 }
 </style>
 
@@ -23,7 +22,11 @@ Real-time _communication_ & _collaboration_ for the desktop & mobile
 
 <i class="icon icon-star"></i> [Discover Telepathy](/about)
 
-<i class="icon icon-search"></i> [Explore the project](/components)
+<i class="icon icon-search"></i> [Explore the components](/components)
+
+<i class="icon icon-download"></i> [Get the latest releases](/components/releases)
+
+<i class="icon icon-link"></i> [Develop](/resources/developing)
 
 </div>
 </center>

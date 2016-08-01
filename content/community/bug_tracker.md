@@ -50,3 +50,7 @@ Developers sometimes tag certain bugs as tasks that could be fixed by new contri
 {{< note title="Note" >}}
 Always consult with developers before picking a task, in any case
 {{< /note >}}
+
+## Using bugzilla
+
+If you are a contributor working with bug reports and you are unsure on how to use the various fields, [read on](/resources/using_bugzilla).

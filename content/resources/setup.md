@@ -1,6 +1,7 @@
 ---
 title: Setting up
 categories: ["tutorials"]
+audiences: ["beginers"]
 ---
 
 ## Overview

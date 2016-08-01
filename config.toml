@@ -45,6 +45,7 @@ canonifyurls = false
 
 [taxonomies]
     category   = "categories"
+    audience   = "audiences"
 
 [[menu.main]]
     name   = "About"
@@ -57,19 +58,19 @@ canonifyurls = false
 #   weight = 30
 
 [[menu.main]]
+    name   = "Components"
+    url       = "components/"
+    weight = 30
+
+[[menu.main]]
     name   = "Releases"
     url       = "components/releases/"
     weight = 40
 
 [[menu.main]]
     name = "Documentation"
-    url   = "documentation/"
+    url   = "components/documentation/"
     weight = 45
-
-[[menu.main]]
-    name   = "Components"
-    url       = "components/"
-    weight = 50
 
 [[menu.main]]
     name   = "Resources"
