@@ -1,0 +1,10 @@
+@media only screen and (max-width: 959px) {
+    .palette-primary-indigo .project {
+        background: none;
+        box-shadow: none;
+    }
+}
+
+.palette-accent-orange .repo a {
+    background: #0091ea;
+}

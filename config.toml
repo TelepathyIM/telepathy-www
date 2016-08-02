@@ -24,15 +24,15 @@ canonifyurls = false
     permalink = "#"
 
     # Custom assets
-    custom_css = []
+    custom_css = ["stylesheets/telepathy.css"]
     custom_js  = []
 
     # Syntax highlighting theme
     highlight_css  = ""
 
 [params.palette]
-    primary = "grey"
-    accent  = "light green"
+    primary = "indigo"
+    accent  = "orange"
 
 [params.font]
     text = "Ubuntu"

@@ -25,7 +25,7 @@
     {{ if isset . "git_site" }}
     <br/>
     <div class="repo">
-    <center><a href="{{ $.Scratch.Get "browse_url" }}">Browse repository</a></center>
+    <center><a href="{{ $.Scratch.Get "browse_url" }}"><i class="icon icon-search"></i>Browse repository</a></center>
     </div>
 
     <center><code>git clone {{ $.Scratch.Get "clone_url" }}</code></center>
