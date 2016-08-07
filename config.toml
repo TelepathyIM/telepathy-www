@@ -1,4 +1,4 @@
-baseurl = "http://telepathy.freedesktop.org/"
+baseurl = "https://telepathy.freedesktop.org/"
 languageCode = "en-us"
 title = "Telepathy"
 theme = "hugo-material-docs"
