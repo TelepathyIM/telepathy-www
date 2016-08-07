@@ -12,6 +12,10 @@ Thank you for choosing to contribute to this project.
 * Write documentation. Polish the [Telepathy Spec](/components/telepathy-spec) or the [Telepathy Developer's Manual](/components/telepathy-book) or [add content in this web site](/resources/editing_the_website)
 * Integrate Telepathy in your application or develop a connection manager for a new protocol. See [Developing with Telepathy](/resources/developing)
 
+## Before you begin
+
+Join our [mailing list](/community/mailing_list) and [IRC channel](/community/chat) and get in touch with us. Let us know that you are around and interested to contribute.
+
 ## Contributing with code
 
 1. Identify what you want to work on. Check out the [bug tracker](/community/bug_tracker) to find items (bugs or features) that you could work on.

@@ -23,11 +23,17 @@ The [API Documentation](/documentation) of these libraries will help you get acq
 
 ## I don't want to use C or C++, can I use a modern language instead?
 
-In many cases, yes, you can. Telepathy GLib can be used from many other languages (mostly scripting ones) via [GObject Introspection](https://wiki.gnome.org/Projects/GObjectIntrospection). Here is a list of [supported languages](https://wiki.gnome.org/Projects/GObjectIntrospection/Users) that you can use this with.
+In many cases, yes, you can. Telepathy GLib can be used from many other languages (mostly scripting ones) via [GObject Introspection](https://wiki.gnome.org/Projects/GObjectIntrospection). Here is a list of [languages](https://wiki.gnome.org/Projects/GObjectIntrospection/Users) that you can use this with.
 
-## Discover resources
+## Further information
 
-Our [resources](/resources) section includes many other tutorials and guides, including information on how to [setup](/resources/setup) the components, how to [debug](/resources/debugging) when things go wrong, etc...
+Working on an application does not require you to build Telepathy from source. You can use packages from your distribution. If you, however, wish to build things from source, take a look at our **[setup](/resources/setup)** tutorial.
+
+While developing, you will probably find it useful to know how to **[debug](/resources/debugging)** Telepathy.
+
+If you wish to contribute your code to the Telepathy project upstream, then you should also read our **[contributing](/resources/contributing)** guide.
+
+You can also find more information, tutorials, guides, etc, in our **[resources](/resources)** section.
 
 ## What next?
 
