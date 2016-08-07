@@ -1,37 +1,10 @@
-<style>h3 {text-align: center}</style>
-
-<h2>Documents</h2>
 <ul>
 {{ range sort $.Site.Data.components "weight" "asc" }}
-{{ if eq .type "doc" }}
-  {{ partial "components/component_listing" . }}
-{{ end }}
-{{ end }}
-</ul>
-
-<h2>Libraries</h2>
-<ul>
-{{ range sort $.Site.Data.components "weight" "asc" }}
-{{ if eq .type "lib" }}
-  {{ partial "components/component_listing" . }}
-{{ end }}
-{{ end }}
-</ul>
-
-<h2>Connection Managers</h2>
-<ul>
-{{ range sort $.Site.Data.components "weight" "asc" }}
-{{ if eq .type "cm" }}
-  {{ partial "components/component_listing" . }}
-{{ end }}
-{{ end }}
-</ul>
-
-<h2>Others</h2>
-<ul>
-{{ range sort $.Site.Data.components "weight" "asc" }}
-{{ if eq .type "other" }}
-  {{ partial "components/component_listing" . }}
+{{ if eq .type $.Params.component_type }}
+    <li>
+        <a href="/components/{{ .name }}">{{ .title }}</a>
+        {{ with .short_desc }} - {{ . | markdownify }}{{ end }}
+    </li>
 {{ end }}
 {{ end }}
 </ul>
