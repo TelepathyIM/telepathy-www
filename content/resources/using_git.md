@@ -1,7 +1,6 @@
 ---
 title: Using Git
 categories: ["policies"]
-audiences: ["beginers"]
 ---
 
 This page explains how we use the various Git features in Telepathy.

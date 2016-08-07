@@ -1,7 +1,6 @@
 ---
 title: Developing with Telepathy
 categories: ["guides"]
-audiences: ["beginers"]
 ---
 
 Welcome to Telepathy! So, you want to develop some application with real-time communication and/or collaboration features or provide a protocol backend? Great! Read on...

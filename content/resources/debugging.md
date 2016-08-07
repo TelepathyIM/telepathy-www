@@ -1,7 +1,6 @@
 ---
 title: Debugging
 categories: ["information"]
-audiences: ["beginers"]
 ---
 
 ## If you are using Empathy or KDE-Telepathy...

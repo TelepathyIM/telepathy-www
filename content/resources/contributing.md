@@ -1,7 +1,6 @@
 ---
 title: Contributing to Telepathy
 categories: ["guides"]
-audiences: ["beginers"]
 ---
 
 Thank you for choosing to contribute to this project.

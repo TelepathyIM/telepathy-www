@@ -1,7 +1,6 @@
 ---
 title: Editing this website
 categories: ["information"]
-audiences: ["contributors"]
 ---
 
 This website uses [Hugo](https://www.gohugo.io/) to generate static pages out of markdown documents and html templates. If you are unfamiliar with hugo and go templates, you should first read some of hugo's documentation.

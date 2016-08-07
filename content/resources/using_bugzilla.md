@@ -1,7 +1,6 @@
 ---
 title: Using bugzilla
 categories: ["policies"]
-audiences: ["contributors"]
 ---
 
 This page describes how certain bugzilla features are used in Telepathy. It assumes that you are already familiar with bugzilla.

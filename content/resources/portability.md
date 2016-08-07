@@ -1,7 +1,6 @@
 ---
 title: Portability Guidelines
 categories: ["information"]
-audiences: ["contributors"]
 ---
 
 This page lists some known caveats that you should keep in mind when writing Telepathy code, in order to keep things portable.

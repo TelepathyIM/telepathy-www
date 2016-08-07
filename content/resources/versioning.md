@@ -1,7 +1,6 @@
 ---
 title: Versioning policy
 categories: ["policies"]
-audiences: ["contributors"]
 ---
 
 Telepathy in general is following the [Gnome Versioning Guidelines](https://developer.gnome.org/programming-guidelines/stable/versioning.html.en). This pages summarizes some important parts.

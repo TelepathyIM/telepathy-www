@@ -45,7 +45,6 @@ canonifyurls = false
 
 [taxonomies]
     category   = "categories"
-    audience   = "audiences"
 
 [[menu.main]]
     name   = "About"

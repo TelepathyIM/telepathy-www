@@ -1,7 +1,6 @@
 ---
 title: Coding Style
 categories: ["policies"]
-audiences: ["contributors"]
 ---
 
 This coding style is (or should be) used for all the core Telepathy components.

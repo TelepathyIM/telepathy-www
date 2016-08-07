@@ -1,7 +1,6 @@
 ---
 title: Review procedure
 categories: ["policies"]
-audiences: ["beginers"]
 ---
 
 All patches to Telepathy components are reviewed by (hopefully) more experienced developers of the components to ensure that they meet standards of code quality, understandability and maintainability.
