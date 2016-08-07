@@ -1,0 +1,26 @@
+<ul>
+{{ range sort $.Site.Data.components "weight" "asc" }}
+{{ if eq .type $.Params.component_type }}
+
+    {{ $title := .title }}
+    {{ $short_desc := .short_desc }}
+
+    {{ if isset $.Params "next" }}
+        {{ $.Scratch.Set "link" "doc_next" }}
+    {{ else }}
+        {{ if isset . "doc_stable" }}
+            {{ $.Scratch.Set "link" "doc_stable" }}
+        {{ else }}
+            {{ $.Scratch.Set "link" "doc_unstable" }}
+        {{ end }}
+    {{ end }}
+
+    {{ with index . ($.Scratch.Get "link") }}
+    <li>
+        <a href="{{ . }}">{{ $title }}</a>
+        {{ with $short_desc }} - {{ . | markdownify }}{{ end }}
+    </li>
+    {{ end }}
+{{ end }}
+{{ end }}
+</ul>
