@@ -26,7 +26,9 @@ Real-time _communication_ & _collaboration_ for the desktop & mobile
 
 <i class="icon icon-download"></i> [Get the latest releases](/components/releases)
 
-<i class="icon icon-link"></i> [Develop](/resources/developing)
+<i class="icon icon-link"></i> [Develop with Telepathy](/resources/developing)
+
+<i class="icon icon-link"></i> [Contribute](/resources/contributing)
 
 </div>
 </center>
