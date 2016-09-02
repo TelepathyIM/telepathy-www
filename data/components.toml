@@ -190,7 +190,7 @@ short_desc = "Account Manager and Channel Dispatcher implementation, which store
 release_site = "telepathy_freedesktop"
 git_site = "telepathy_freedesktop"
 
-version_stable = "5.16.3"
+version_stable = "5.16.4"
 version_unstable = "5.15.1"
 version_next = "5.99.11"
 
