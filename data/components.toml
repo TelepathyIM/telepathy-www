@@ -7,7 +7,7 @@ title = "Telepathy D-Bus API Specification"
 short_desc = "The D-Bus API Specification"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.27.3"
 version_next = "0.99.8"
@@ -39,7 +39,7 @@ title = "Telepathy GLib"
 short_desc = "GLib/GObject-based library for clients and connection managers"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.24.1"
 version_unstable = "0.23.3"
@@ -59,7 +59,7 @@ title = "Telepathy Qt"
 short_desc = "Qt-based library for clients and connection managers, including a Qt binding for Telepathy Farstream"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.9.7"
 
@@ -75,7 +75,7 @@ title = "Telepathy Farstream"
 short_desc = "GLib/GObject library that uses Farstream to handle the media streaming part of channels of type Call"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.6.2"
 version_next = "UNRELEASED"
@@ -108,7 +108,7 @@ title = "Telepathy Gabble"
 short_desc = "Jabber/XMPP connection manager that handles single- and multi-user chats as well as voice/video calls"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.18.3"
 version_unstable = "0.17.5"
@@ -124,7 +124,7 @@ title = "Telepathy Salut"
 short_desc = "link-local XMPP connection manager ([XEP-0174](http://www.xmpp.org/extensions/xep-0174.html))"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.8.1"
 version_unstable = "0.7.2"
@@ -140,7 +140,7 @@ title = "Telepathy Haze"
 short_desc = "connection manager based on Pidgin's libpurple, supporting all protocols in Pidgin (AIM, ICQ, Yahoo, etc)"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.8.0"
 version_unstable = "0.7.1"
@@ -156,7 +156,7 @@ title = "Telepathy Rakia"
 short_desc = "SIP connection manager based around the [Sofia-SIP](http://sofia-sip.sourceforge.net/) library"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.8.0"
 version_unstable = "0.7.5"
@@ -172,7 +172,7 @@ title = "Telepathy Idle"
 short_desc = "IRC connection manager"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.2.0"
 version_unstable = "0.1.17"
@@ -188,7 +188,7 @@ title = "Mission Control"
 short_desc = "Account Manager and Channel Dispatcher implementation, which stores accounts and coordinates the launching of connection managers and clients"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "5.16.4"
 version_unstable = "5.15.1"
@@ -204,6 +204,6 @@ title = "Telepathy Logger"
 short_desc = "daemon that centralizes the logging of all communication within the Telepathy framework"
 
 release_site = "telepathy_freedesktop"
-git_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
 
 version_stable = "0.8.2"
