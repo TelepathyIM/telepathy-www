@@ -179,6 +179,42 @@ version_unstable = "0.1.17"
 version_next = "0.99.11"
 
 
+[telepathy-morse]
+name = "telepathy-morse"
+type = "cm"
+weight = 75
+
+title = "Telepathy Morse"
+short_desc = "connection manager for Telegram network"
+
+release_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
+
+
+[telepathy-nonsense]
+name = "telepathy-nonsense"
+type = "cm"
+weight = 80
+
+title = "Telepathy Nonsense"
+short_desc = "connection manager for the XMPP (Jabber) protocol, based on QXmpp"
+
+release_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
+
+
+[telepathy-hanging]
+name = "telepathy-hanging"
+type = "cm"
+weight = 85
+
+title = "Telepathy Hanging"
+short_desc = "connection manager for Hangouts"
+
+release_site = "telepathy_freedesktop"
+git_site = "telepathy_github"
+
+
 [telepathy-mission-control]
 name = "telepathy-mission-control"
 type = "other"
