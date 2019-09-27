@@ -67,7 +67,7 @@ That depends on what you want, but you should probably at least build the follow
 * [Telepathy GLib](/components/telepathy-glib), required as a dependency for Mission Control
 * [Mission Control](/components/telepathy-mission-control), the Account Manager and Channel Dispatcher, which is necessary to start any connection or channel
 * [Telepathy Gabble](/components/telepathy-gabble), the XMPP connection manager, which also doubles as the reference CM to test things with
-* A client... [Empathy](http://live.gnome.org/Empathy) / [KDE-Telepathy](http://community.kde.org/KTp) / yours...
+* A client... [Empathy](https://wiki.gnome.org/Apps/Empathy) / [KDE-Telepathy](http://community.kde.org/KTp) / yours...
 
 ### Nice to have
 

@@ -7,7 +7,8 @@ This page enlists various components that together make the Telepathy project. F
 ## Clients
 
 * [KDE-Telepathy](http://community.kde.org/KTp) - a collection of components providing IM capabilities to the Plasma desktops
-* [Empathy](http://live.gnome.org/Empathy) - Gnome IM/voice/video client
+* [Empathy](https://wiki.gnome.org/Apps/Empathy) - GNOME IM/voice/video client
+* [Polari](https://wiki.gnome.org/Apps/Polari) - GNOME Irc client
 
 ## Connection Managers
 
@@ -21,7 +22,7 @@ Connection Managers are the components responsible for actually connecting to th
 
 ### Related
 
-* [Folks](http://live.gnome.org/Folks) - library that aggregates people from multiple sources (eg, Telepathy connection managers for IM contacts, Evolution Data Server for local contacts, libsocialweb for web service contacts, etc.) to create metacontacts
+* [Folks](https://wiki.gnome.org/action/show/Projects/Folks) - library that aggregates people from multiple sources (eg, Telepathy connection managers for IM contacts, Evolution Data Server for local contacts, libsocialweb for web service contacts, etc.) to create metacontacts
 
 ## Other Components
 
