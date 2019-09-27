@@ -21,7 +21,11 @@ For the record, here is a list of known applications / components that track the
     </tr>
     <tr>
         <td>Empathy</td>
-        <td><a href="https://bugzilla.gnome.org/enter_bug.cgi?product=empathy">Gnome Bugzilla</a></td>
+        <td><a href="https://gitlab.gnome.org/GNOME/empathy/issues/new">GNOME Gitlab</a></td>
+    </tr>
+    <tr>
+        <td>Polari</td>
+        <td><a href="https://gitlab.gnome.org/GNOME/polari/issues/new">GNOME Gitlab</a></td>
     </tr>
     <tr>
         <td>KDE-Telepathy</td>

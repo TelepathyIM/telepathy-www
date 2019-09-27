@@ -5,7 +5,7 @@ categories: ["information"]
 
 ## If you are using Empathy or KDE-Telepathy...
 
-Empathy and KDE-Telepathy both have debug consoles which show you the debug output from components of your choice. Refer to the [Empathy wiki](http://live.gnome.org/Empathy/Debugging) and the [KDE Community wiki](https://community.kde.org/KTp/FAQ#Providing_debug) respectively for more details.
+Empathy and KDE-Telepathy both have debug consoles which show you the debug output from components of your choice. Refer to the [Empathy wiki](/https://wiki.gnome.org/Apps/Empathy/Debugging) and the [KDE Community wiki](https://community.kde.org/KTp/FAQ#Providing_debug) respectively for more details.
 
 If you're not using one of these clients, or you're debugging a crash, or you're just feeling old-school, read on!
 
