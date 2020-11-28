@@ -9,7 +9,7 @@ short_desc = "The D-Bus API Specification"
 release_site = "telepathy_freedesktop"
 git_site = "telepathy_github"
 
-version_stable = "0.27.3"
+version_stable = "0.27.4"
 version_next = "0.99.8"
 
 doc_stable = "http://telepathy.freedesktop.org/spec"
@@ -61,7 +61,7 @@ short_desc = "Qt-based library for clients and connection managers, including a 
 release_site = "telepathy_freedesktop"
 git_site = "telepathy_github"
 
-version_stable = "0.9.7"
+version_stable = "0.9.8"
 
 doc_stable = "http://telepathy.freedesktop.org/doc/telepathy-qt/"
 
@@ -110,7 +110,7 @@ short_desc = "Jabber/XMPP connection manager that handles single- and multi-user
 release_site = "telepathy_freedesktop"
 git_site = "telepathy_github"
 
-version_stable = "0.18.3"
+version_stable = "0.18.4"
 version_unstable = "0.17.5"
 version_next = "0.99.10"
 
@@ -142,7 +142,7 @@ short_desc = "connection manager based on Pidgin's libpurple, supporting all pro
 release_site = "telepathy_freedesktop"
 git_site = "telepathy_github"
 
-version_stable = "0.8.0"
+version_stable = "0.8.2"
 version_unstable = "0.7.1"
 version_next = "0.99.11"
 
@@ -174,7 +174,7 @@ short_desc = "IRC connection manager"
 release_site = "telepathy_freedesktop"
 git_site = "telepathy_github"
 
-version_stable = "0.2.0"
+version_stable = "0.2.2"
 version_unstable = "0.1.17"
 version_next = "0.99.11"
 
@@ -226,7 +226,7 @@ short_desc = "Account Manager and Channel Dispatcher implementation, which store
 release_site = "telepathy_freedesktop"
 git_site = "telepathy_github"
 
-version_stable = "5.16.4"
+version_stable = "5.16.6"
 version_unstable = "5.15.1"
 version_next = "5.99.11"
 
