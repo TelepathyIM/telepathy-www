@@ -12,9 +12,11 @@ weight: 0
 </style>
 
 <center>
+{{% md %}}
 ![Telepathy logo](/images/Telepathy.png)
 <br/>
 Real-time _communication_ & _collaboration_ for the desktop & mobile
+{{% /md %}}
 
 <br/>
 
