@@ -6,5 +6,13 @@
 }
 
 .palette-accent-orange .repo a {
+    box-shadow:0 2px 4px rgba(0,0,0,.23);
+    color:#ffffff;
     background: #0091ea;
+}
+
+.palette-accent-orange .repo a:focus,.palette-accent-orange .repo a:hover{
+    box-shadow:0 4px 7px rgba(0,0,0,.23),0 8px 25px rgba(0,0,0,.05);
+    color:#ffffff;
+    opacity:.8
 }
