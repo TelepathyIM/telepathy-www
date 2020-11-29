@@ -1,5 +1,5 @@
 ---
-title: Front Page
+title: Telepathy
 type: index
 weight: 0
 ---
