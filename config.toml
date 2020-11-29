@@ -7,6 +7,11 @@ canonifyurls = false
 # Enable Google Analytics by entering your tracking id
 #googleAnalytics = ""
 
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+    unsafe = true
+
 [params]
     # General information
     #author = ""
